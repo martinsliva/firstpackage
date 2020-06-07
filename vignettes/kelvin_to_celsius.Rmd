@@ -1,0 +1,33 @@
+---
+title: "Vignette firstpackage"
+author: "Martin Slíva"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{kelvin_to_celsius}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+Library consists a function kelvin_to_celsius
+
+Examples of usage of the function.
+
+```{r setup}
+library(firstpackage)
+
+kelvin_to_celsius(273.15)
+
+kelvin_to_celsius(0)
+
+kelvin_to_celsius(-1)
+
+```
